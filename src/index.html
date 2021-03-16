@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="preload"
+      href="fonts/Roboto-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/Roboto-Medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/Roboto-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" media="all" href="css/style.min.css" />
+    <title>First Task</title>
+  </head>
+  <body id="home">
+    <main class="main">
+      <div class="container">
+        <section class="goods">
+          <h1 class="section-title">Тестовые товары</h1>
+          <ul class="goods__list">
+            <li class="goods__item">
+              <div class="goods__top">
+                <span class="goods__tag goods__tag_blue">top</span>
+                <svg class="goods__icon">
+                  <use xlink:href="img/icons/icons.svg#like"></use>
+                </svg>
+              </div>
+              <a href="#" class="goods__link">
+                <picture class="goods__image">
+                  <source srcset="img/img3.webp" type="image/webp" />
+                  <img src="img/img3.png" alt="goods image" />
+                </picture>
+              </a>
+              <div class="goods__body">
+                <div class="goods__rating">
+                  <ul class="goods__rating-list" data-total-value="4">
+                    <li class="goods__rating-item">&#9733;</li>
+                    <li class="goods__rating-item">&#9733;</li>
+                    <li class="goods__rating-item">&#9733;</li>
+                    <li class="goods__rating-item">&#9733;</li>
+                    <li class="goods__rating-item">&#9733;</li>
+                  </ul>
+                  <a href="#" class="goods__rating-votes">3</a>
+                </div>
+                <div class="goods__desc">
+                  <h4 class="goods__desc-title">Group</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    consectetur adipiscing elit
+                  </p>
+                  <div class="goods__desc-separator"></div>
+                </div>
+                <div class="goods__bottom">
+                  <span class="goods__price"
+                    >3 799 <span class="goods__currency">₴</span></span
+                  >
+                  <div class="goods__stock">
+                    <svg class="goods__icon">
+                      <use xlink:href="img/icons/icons.svg#check"></use>
+                    </svg>
+                    <span>В наличии</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="goods__item">
+              <div class="goods__top">
+                <span class="goods__tag goods__tag_purple">new</span>
+                <svg class="goods__icon">
+                  <use xlink:href="img/icons/icons.svg#like"></use>
+                </svg>
+              </div>
+              <a href="#" class="goods__link">
+                <picture class="goods__image">
+                  <source srcset="img/img-1.webp" type="image/webp" />
+                  <img src="img/img-1.png" alt="goods image" />
+                </picture>
+              </a>
+              <div class="goods__body">
+                <div class="goods__rating">
+                  <ul class="goods__rating-list" data-total-value="4">
+                    <li class="goods__rating-item">&#9733;</li>
+                    <li class="goods__rating-item">&#9733;</li>
+                    <li class="goods__rating-item">&#9733;</li>
+                    <li class="goods__rating-item">&#9733;</li>
+                    <li class="goods__rating-item">&#9733;</li>
+                  </ul>
+                  <a href="#" class="goods__rating-votes">44</a>
+                </div>
+                <div class="goods__desc">
+                  <h4 class="goods__desc-title">Group</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  <div class="goods__desc-separator"></div>
+                </div>
+                <div class="goods__bottom">
+                  <span class="goods__price"
+                    >711 <span class="goods__currency">₴</span></span
+                  >
+                  <div class="goods__stock">
+                    <svg class="goods__icon">
+                      <use xlink:href="img/icons/icons.svg#check"></use>
+                    </svg>
+                    <span>В наличии</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="goods__item">
+              <div class="goods__top">
+                <span class="goods__tag goods__tag_blue">top</span>
+                <svg class="goods__icon">
+                  <use xlink:href="img/icons/icons.svg#like"></use>
+                </svg>
+              </div>
+              <a href="#" class="goods__link">
+                <picture class="goods__image">
+                  <source srcset="img/img-2.webp" type="image/webp" />
+                  <img src="img/img-2.png" alt="goods image" />
+                </picture>
+              </a>
+              <div class="goods__body">
+                <div class="goods__rating">
+                  <ul class="goods__rating-list" data-total-value="4">
+                    <li class="goods__rating-item">&#9733;</li>
+                    <li class="goods__rating-item">&#9733;</li>
+                    <li class="goods__rating-item">&#9733;</li>
+                    <li class="goods__rating-item">&#9733;</li>
+                    <li class="goods__rating-item">&#9733;</li>
+                  </ul>
+                  <a href="#" class="goods__rating-votes">11</a>
+                </div>
+                <div class="goods__desc">
+                  <h4 class="goods__desc-title">Group</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  <div class="goods__desc-separator"></div>
+                </div>
+                <div class="goods__bottom">
+                  <span class="goods__price"
+                    >22 105 <span class="goods__currency">₴</span></span
+                  >
+                  <div class="goods__stock">
+                    <svg class="goods__icon">
+                      <use xlink:href="img/icons/icons.svg#check"></use>
+                    </svg>
+                    <span>В наличии</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="goods__item">
+              <div class="goods__top"></div>
+              <a href="#" class="goods__link">
+                <picture class="goods__image">
+                  <source srcset="img/img-1.webp" type="image/webp" />
+                  <img src="img/img-1.png" alt="goods image" />
+                </picture>
+              </a>
+              <div class="goods__body">
+                <div class="goods__rating">
+                  <ul class="goods__rating-list" data-total-value="4">
+                    <li class="goods__rating-item">&#9733;</li>
+                    <li class="goods__rating-item">&#9733;</li>
+                    <li class="goods__rating-item">&#9733;</li>
+                    <li class="goods__rating-item">&#9733;</li>
+                    <li class="goods__rating-item">&#9733;</li>
+                  </ul>
+                  <a href="#" class="goods__rating-votes">76</a>
+                </div>
+                <div class="goods__desc">
+                  <h4 class="goods__desc-title">Group</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  <div class="goods__desc-separator"></div>
+                </div>
+                <div class="goods__bottom">
+                  <span class="goods__price"
+                    >158 <span class="goods__currency">₴</span></span
+                  >
+                  <div class="goods__stock">
+                    <svg class="goods__icon">
+                      <use xlink:href="img/icons/icons.svg#check"></use>
+                    </svg>
+                    <span>В наличии</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="goods__item">
+              <div class="goods__top">
+                <span class="goods__tag goods__tag_purple">new</span>
+                <svg class="goods__icon">
+                  <use xlink:href="img/icons/icons.svg#like"></use>
+                </svg>
+              </div>
+              <a href="#" class="goods__link">
+                <picture class="goods__image">
+                  <source srcset="img/img-1.webp" type="image/webp" />
+                  <img src="img/img-1.png" alt="goods image" />
+                </picture>
+              </a>
+              <div class="goods__body">
+                <div class="goods__rating">
+                  <ul class="goods__rating-list" data-total-value="4">
+                    <li class="goods__rating-item">&#9733;</li>
+                    <li class="goods__rating-item">&#9733;</li>
+                    <li class="goods__rating-item">&#9733;</li>
+                    <li class="goods__rating-item">&#9733;</li>
+                    <li class="goods__rating-item">&#9733;</li>
+                  </ul>
+                  <a href="#" class="goods__rating-votes">2</a>
+                </div>
+                <div class="goods__desc">
+                  <h4 class="goods__desc-title">Group</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  <div class="goods__desc-separator"></div>
+                </div>
+                <div class="goods__bottom">
+                  <span class="goods__price"
+                    >1 000 <span class="goods__currency">₴</span></span
+                  >
+                  <div class="goods__stock">
+                    <svg class="goods__icon">
+                      <use xlink:href="img/icons/icons.svg#check"></use>
+                    </svg>
+                    <span>В наличии</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <div class="pagination">
+          <div class="pagination__arrow prev-arrow"></div>
+          <ul class="pagination__list">
+            <li class="pagination__item">1</li>
+            <li class="pagination__item active">2</li>
+            <li class="pagination__item">3</li>
+            <li class="pagination__item">4</li>
+            <li class="pagination__item">5</li>
+          </ul>
+          <div class="pagination__arrow next-arrow"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
