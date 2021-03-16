@@ -331,9 +331,9 @@ body {
 .goods__rating-votes {
   color: #33485D;
   border-bottom: 1px solid transparent;
-  -webkit-transition: border-bottom 0.2s;
-  -o-transition: border-bottom 0.2s;
-  transition: border-bottom 0.2s;
+  -webkit-transition: border-bottom-color 0.2s;
+  -o-transition: border-bottom-color 0.2s;
+  transition: border-bottom-color 0.2s;
 }
 
 .goods__rating-votes:hover {

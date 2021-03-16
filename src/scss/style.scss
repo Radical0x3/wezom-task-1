@@ -1,4 +1,3 @@
-// @import "normalize.scss";
 @import "partials/general/_vars";
 @import "partials/general/nullstyle";
 @import "fonts";
@@ -200,7 +199,7 @@ body {
     &-votes {
       color: $primary;
       border-bottom: 1px solid transparent;
-      transition: border-bottom 0.2s;
+      transition: border-bottom-color 0.2s;
 
       &:hover {
         border-bottom-color: $primary;
