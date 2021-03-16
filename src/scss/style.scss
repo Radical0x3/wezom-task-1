@@ -1,5 +1,5 @@
-@import "partials/general/_vars";
 @import "partials/general/nullstyle";
+@import "partials/general/_vars";
 @import "fonts";
 
 body {
@@ -50,7 +50,9 @@ body {
     width: 19%;
     @include adaptive-value(margin, 7, 4);
     border: 2px solid #239653;
-    padding: 14px 10px 0 10px;
+    padding-top: 15px;
+    @include adaptive-value(padding-right, 10, 5);
+    @include adaptive-value(padding-left, 10, 5);
     @include adaptive-value(padding-bottom, 38, 20);
     position: relative;
     border-radius: 3px;
@@ -199,7 +201,7 @@ body {
     &-votes {
       color: $primary;
       border-bottom: 1px solid transparent;
-      transition: border-bottom-color 0.2s;
+      transition: border-bottom 0.2s;
 
       &:hover {
         border-bottom-color: $primary;
@@ -209,7 +211,7 @@ body {
 
   &__desc {
     @include adaptive-value(line-height, 22, 16);
-    @include adaptive-value(height, 87, 60);
+    @include adaptive-value(height, 87, 70);
     position: relative;
     margin-bottom: 5px;
     overflow: hidden;
@@ -227,7 +229,7 @@ body {
 
     &-separator {
       width: 100%;
-      @include adaptive-value(height, 25, 15);
+      @include adaptive-value(height, 25, 20);
       position: absolute;
       left: 0;
       bottom: 0;

@@ -168,7 +168,9 @@ body {
   width: 19%;
   margin: 7px;
   border: 2px solid #239653;
-  padding: 14px 10px 0 10px;
+  padding-top: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
   padding-bottom: 38px;
   position: relative;
   border-radius: 3px;
@@ -331,9 +333,9 @@ body {
 .goods__rating-votes {
   color: #33485D;
   border-bottom: 1px solid transparent;
-  -webkit-transition: border-bottom-color 0.2s;
-  -o-transition: border-bottom-color 0.2s;
-  transition: border-bottom-color 0.2s;
+  -webkit-transition: border-bottom 0.2s;
+  -o-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
 }
 
 .goods__rating-votes:hover {
@@ -529,6 +531,14 @@ body {
   }
 
   .goods__item {
+    padding-right: calc( 5px + 5 * ((100vw - 320px) / 1200));
+  }
+
+  .goods__item {
+    padding-left: calc( 5px + 5 * ((100vw - 320px) / 1200));
+  }
+
+  .goods__item {
     padding-bottom: calc( 20px + 18 * ((100vw - 320px) / 1200));
   }
 
@@ -561,7 +571,7 @@ body {
   }
 
   .goods__desc {
-    height: calc( 60px + 27 * ((100vw - 320px) / 1200));
+    height: calc( 70px + 17 * ((100vw - 320px) / 1200));
   }
 
   .goods__desc-title {
@@ -573,7 +583,7 @@ body {
   }
 
   .goods__desc-separator {
-    height: calc( 15px + 10 * ((100vw - 320px) / 1200));
+    height: calc( 20px + 5 * ((100vw - 320px) / 1200));
   }
 
   .goods__price {
