@@ -120,7 +120,7 @@ body {
     object-fit: cover;
     fill: $primary;
     cursor: pointer;
-    transition: 0.3s;
+    transition: fill 0.3s, width 0.3s, height 0.3s;
 
     use {
       width: 100%;
@@ -180,7 +180,7 @@ body {
     &-item {
       font-size: 18px;
       color: rgba(#ffa800, 0.5);
-      transition: 0.2s;
+      transition: color 0.2s;
 
       &:not(:first-child) {
         margin-right: 4px;
@@ -316,7 +316,7 @@ body {
     line-height: 22px;
     color: #5c6d7d;
     cursor: pointer;
-    transition: 0.3s;
+    transition: background 0.3s, border-color 0.3s;
 
     &.active {
       border-width: 2px;
