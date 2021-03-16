@@ -28,21 +28,18 @@ const path = {
   build: {
     html: project_folder + "/",
     css: project_folder + "/css",
-    js: project_folder + "/js",
     img: project_folder + "/img",
     fonts: project_folder + "/fonts",
   },
   src: {
     html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
     css: source_folder + "/scss/*.scss",
-    js: source_folder + "/js/*.js",
     img: source_folder + "/img/**/*.+(jpg|png|svg|gif|ico|webp)",
     fonts: source_folder + "/fonts/*.ttf",
   },
   watch: {
     html: source_folder + "/**/*.html",
     css: source_folder + "/scss/**/*.scss" + "",
-    js: source_folder + "/js/**/*.js",
     img: source_folder + "/img/**/*.+(jpg|png|svg|gif|ico|webp)",
   },
   clean: "./" + project_folder + "/",
@@ -63,20 +60,6 @@ function html() {
     .pipe(fileinclude())
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(dest(path.build.html))
-    .pipe(browsersync.stream());
-}
-
-function js() {
-  return src(path.src.js)
-    .pipe(fileinclude())
-    .pipe(dest(path.build.js))
-    .pipe(uglify())
-    .pipe(
-      rename({
-        extname: ".min.js",
-      })
-    )
-    .pipe(dest(path.build.js))
     .pipe(browsersync.stream());
 }
 
@@ -169,7 +152,6 @@ function cb() {}
 function watchFiles(params) {
   gulp.watch([path.watch.html], html);
   gulp.watch([path.watch.css], css);
-  gulp.watch([path.watch.js], js);
   gulp.watch([path.watch.img], images);
 }
 
@@ -177,12 +159,11 @@ function clean(params) {
   return del(path.clean);
 }
 
-let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts));
+let build = gulp.series(clean, gulp.parallel(css, html, images, fonts));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.html = html;
 exports.css = css;
-exports.js = js;
 exports.images = images;
 exports.fonts = fonts;
 exports.build = build;
