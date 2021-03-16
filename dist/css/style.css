@@ -536,9 +536,9 @@ body {
 .goods__rating-votes {
   color: #33485D;
   border-bottom: 1px solid transparent;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: border-bottom 0.2s;
+  -o-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
 }
 
 .goods__rating-votes:hover {
@@ -639,9 +639,9 @@ body {
   display: inline-block;
   padding: 6px;
   cursor: pointer;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: border-color 0.3s;
+  -o-transition: border-color 0.3s;
+  transition: border-color 0.3s;
 }
 
 .pagination__arrow:hover {

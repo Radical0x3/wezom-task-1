@@ -200,7 +200,7 @@ body {
     &-votes {
       color: $primary;
       border-bottom: 1px solid transparent;
-      transition: 0.2s;
+      transition: border-bottom 0.2s;
 
       &:hover {
         border-bottom-color: $primary;
@@ -288,7 +288,7 @@ body {
     display: inline-block;
     @include adaptive-value(padding, 6, 4);
     cursor: pointer;
-    transition: 0.3s;
+    transition: border-color 0.3s;
 
     &:hover {
       border-color: lighten($primary, 30%);
